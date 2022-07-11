@@ -16,35 +16,11 @@ p{
     font-size: 1.2rem;
     line-height: 28px;
 }
-nav{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-family: 'Bebas Neue', cursive;
-}
-.nav-ul > li{
-        display: inline;
-        font-size: 24px;
-        margin: 10px;
-}
-.nav-ul > li:hover{
-    border-bottom: 2px solid #3A6073;
 
-}
 
-.nav-ul > li > a{
-    text-decoration: none;
-    border-bottom: 0;
-    color: black;
-}
-.nav-logo{
-    max-width:150px;
-    height:auto;
-}
 .icon-phone{
     max-width: 15px;
-    margin-right: 3px;
-    vertical-align: middle;
+
 }
 #banner{
     position: relative;
