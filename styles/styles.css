@@ -30,6 +30,10 @@ nav > a > img{
 
 }
 
+.navbar{
+  margin-right: 15px;
+}
+
 #banner{
     position: relative;
 }
@@ -37,7 +41,7 @@ nav > a > img{
 #banner > img{
     background-size: cover;
     height: auto;
-    width: 100%;
+    width: 80vw;
     filter: brightness(80%)
 }
 
@@ -62,7 +66,7 @@ nav > a > img{
 
 #h3-banner{
   font-family: 'Manrope', sans-serif;
-  font-size: 60px;
+  font-size: 55px;
 }
 
 #banner-button{
@@ -249,8 +253,9 @@ footer{
 /* Media Quieries */
 @media screen and (max-width: 1250px){
   #h3-banner{font-size: 45px;}
-  #banner > img{width:auto;max-height:500px;}
+  #banner > img{height: 65vh; width: auto;}
   #locations > h3{font-size: 24px;}
+  .services-text{margin-bottom:35px;}
 }
 
 @media screen and (max-width: 950px){
@@ -259,16 +264,11 @@ footer{
 
 @media screen and (max-width: 950px){
   #h3-banner{font-size: 35px;}
-  #banner > img{width:auto;max-height:500px;}
-  #locations > h3{font-size: 18px;letter-spacing: 1px;}
+  #locations > h3{font-size: 27px;letter-spacing: 1px;}
 
 }
 @media screen and (max-width: 450px){
-  #h3-banner{font-size: 35px;}
-  #banner > img{width:auto;max-height:400px;}
-  #locations > h3{font-size: 18px;letter-spacing: 1px;}
-  
-
+  #h3-banner{font-size: 25px;}
 }
 
 
