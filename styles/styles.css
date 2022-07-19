@@ -1,60 +1,139 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
 header{
     display: none;
 }
+
 h1, h2, h3{
     text-align: center;
     font-family: 'Bebas Neue', cursive;
 }
+
 h2{
     font-size: 36px;
     letter-spacing: 2px;
     padding-top: 15px;
 }
+
 p{
     font-size: 1.2rem;
     line-height: 28px;
 }
 
+nav > a > img{
+  margin-left: 30px;
+}
 
 .icon-phone{
     max-width: 15px;
 
 }
+
 #banner{
     position: relative;
 }
+
 #banner > img{
     background-size: cover;
     height: auto;
     width: 100%;
+    filter: brightness(80%)
 }
-#banner-button{
+
+#banner-text{
+  opacity: 0;
+  transition: opacity .8s ease-in;
     position: absolute;
-    top: 48%;
+    top: 30%;
     right: 0;
     left: 0;
-    backdrop-filter: blur(5px);
     display: inline-block;
     text-align: center;
-   width: max-content;
    font-size: 24px;
+   color: white;
    letter-spacing: 2px;;
    padding: 0px 20px 0px 20px;
    margin-left: auto;
    margin-right: auto;
+   text-align: center;
+   
 }
+
+#h3-banner{
+  font-family: 'Manrope', sans-serif;
+  font-size: 60px;
+}
+
+#banner-button{
+  opacity: 0;
+  transition: opacity .8s ease-in;
+    position: absolute;
+    top: 55%;
+    right: 0;
+    left: 0;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #banner-button > h3{
     margin-top: 7px;
     margin-bottom: 7px;
+}
+
+.button-6 {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-6:hover,
+.button-6:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button-6:hover {
+  transform: translateY(-1px);
+}
+
+.button-6:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
 }
 #locations{
     background-color: beige;
     padding: 3px;
 }
 #locations > h3{
-    font-size: 24px;
+    font-size: 30px;
     letter-spacing: 3px;
 }
 
@@ -132,11 +211,64 @@ p{
 .stars{
     color: gold;
 }
-footer{
 
+/* Services */
+#services-banner{
+  width: auto;
+  height: 500px;
+  position: relative;
+  background: #bdc3c7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #bdc3c7, #2c3e50); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #bdc3c7, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+}
+#h2-banner{
+  opacity: 0;
+  transition: opacity .8s ease-in;
+  position: absolute;
+  top: 42%;
+  left: 0;
+  right: 0;
+  color: white;
+  font-family: 'Manrope', sans-serif;
+  font-size: 60px;
+}
+
+footer{
     background:#3A6073;
-    
-    padding: 100px;
+}
+
+#footer-imgs{
+  text-align: center;
+}
+
+#footer-imgs > a > img{
+ margin: 10px 40px 10px 40px;
+}
+
+/* Media Quieries */
+@media screen and (max-width: 1250px){
+  #h3-banner{font-size: 45px;}
+  #banner > img{width:auto;max-height:500px;}
+  #locations > h3{font-size: 24px;}
+}
+
+@media screen and (max-width: 950px){
+  #img-section-1{margin-bottom:12px;}
+}
+
+@media screen and (max-width: 950px){
+  #h3-banner{font-size: 35px;}
+  #banner > img{width:auto;max-height:500px;}
+  #locations > h3{font-size: 18px;letter-spacing: 1px;}
+
+}
+@media screen and (max-width: 450px){
+  #h3-banner{font-size: 35px;}
+  #banner > img{width:auto;max-height:400px;}
+  #locations > h3{font-size: 18px;letter-spacing: 1px;}
+  
+
 }
 
 
